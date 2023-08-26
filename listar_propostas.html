@@ -1,0 +1,8 @@
+{% for proposta in propostas %}
+  <p>{{ proposta.nome }}</p>
+  <p>{{ proposta.valor_solicitado }}</p>
+  <p>{{ proposta.status }}</p>
+  <hr>
+{% empty %}
+  <p>Nenhuma proposta encontrada.</p>
+{% endfor %}
